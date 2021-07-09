@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import surfer from "../../assets/surfer.png";
+import surfer from "../../assets/surfer.jpg";
 
 const rotate = keyframes`
     from {
