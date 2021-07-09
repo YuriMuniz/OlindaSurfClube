@@ -31,6 +31,10 @@ export const Banner = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: 85vh;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -66,6 +70,7 @@ export const Button = styled.button`
   }
   @media (max-width: 768px) {
     align-self: center;
+    margin-bottom: 80px;
   }
 `;
 
