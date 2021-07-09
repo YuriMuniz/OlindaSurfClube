@@ -64,7 +64,7 @@ export const Button = styled.button`
   svg {
     font-weight: bold;
   }
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     align-self: center;
   }
 `;
@@ -84,7 +84,7 @@ export const Success = styled.div`
 
 export const Form = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
 
   display: ${(props) => (props.loading ? "none" : "flex")};
   flex-direction: column;
@@ -96,7 +96,7 @@ export const Form = styled.div`
     align-self: center;
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     height: 100%;
   }
 `;
@@ -173,7 +173,7 @@ export const FormContainer = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `;

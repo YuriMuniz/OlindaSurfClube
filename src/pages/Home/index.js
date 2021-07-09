@@ -210,6 +210,10 @@ function Home() {
     });
   };
 
+  const inputTypeDate = () => {
+    document.getElementById("date").type = "date";
+  };
+
   return (
     <Container>
       <Banner>
@@ -256,11 +260,13 @@ function Home() {
                   />
 
                   <input
+                    id="date"
                     name="data_nascimento"
-                    type="date"
+                    type="text"
                     placeholder="Data Nascimento *"
                     value={atleta.data_nascimento}
                     onChange={handleInputChange}
+                    onFocus={inputTypeDate}
                   />
                 </InputGroup>
 
@@ -282,7 +288,7 @@ function Home() {
                   />
                   <input
                     name="numero"
-                    type="text"
+                    type="number"
                     placeholder="Número *"
                     value={atleta.numero}
                     onChange={handleInputChange}
@@ -300,7 +306,7 @@ function Home() {
                   <input
                     id="phone"
                     name="telefone"
-                    type="text"
+                    type="number"
                     placeholder="Número Telefone (55) 55555-5555 *"
                     value={atleta.telefone}
                     onChange={handleInputChange}
